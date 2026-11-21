@@ -26,12 +26,10 @@ code{background:#eef1f6;border-radius:6px;padding:1px 6px;color:#24324d;white-sp
 /* 머리 */
 .nav{position:sticky;top:0;z-index:10;background:rgba(248,248,245,.88);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid rgba(228,232,239,.8)}
 .nav .wrap{display:flex;align-items:center;gap:26px;height:64px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.12rem;color:var(--ink);letter-spacing:-.02em}
-.brand img{width:30px;height:30px}
-.brand b{color:var(--accent)}
-.brand .sep{width:1.5px;height:22px;background:#cfd5df;margin:0 4px}
-.brand .doc{display:inline-flex;align-items:center;gap:7px;background:var(--ink);color:#fff;font-size:.86rem;font-weight:800;letter-spacing:0;padding:6px 13px 6px 11px;border-radius:9px}
-.brand .doc:before{content:"";width:13px;height:15px;border-radius:2px;background:linear-gradient(#fff,#fff) 3px 4px/7px 1.5px no-repeat,linear-gradient(#fff,#fff) 3px 7px/7px 1.5px no-repeat,linear-gradient(#fff,#fff) 3px 10px/5px 1.5px no-repeat;border:1.5px solid #fff;box-sizing:border-box}
+.brand{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;font-weight:800;font-size:1.02rem;letter-spacing:-.02em;padding:6px 16px 6px 6px;border-radius:12px}
+.brand img{width:28px;height:28px;border-radius:8px}
+.brand b{color:#8fb0ff}
+.brand em{font-style:normal;font-weight:700;color:#dbe3f3}
 .nav .links{display:flex;gap:20px}
 .nav .links a{color:var(--sub);font-weight:600;font-size:.93rem}
 .nav .links a:hover{color:var(--ink)}
@@ -184,7 +182,7 @@ footer b{color:#fff}
 <body>
 
 <header class="nav"><div class="wrap">
-  <a class="brand" href="#"><img src="images/logo.png" alt=""><span>환불<b>비서</b></span><i class="sep"></i><span class="doc">개발 설명서</span></a>
+  <a class="brand" href="#"><img src="images/logo.png" alt=""><span>환불<b>비서</b> <em>개발 설명서</em></span></a>
   <nav class="links"><a href="#arch">아키텍처</a><a href="#pipe">AI 호출</a><a href="#guard">안전장치</a><a href="#think">고민한 것</a><a href="#verify">검증</a><a href="#stack">기술 스택</a></nav>
   <a class="btn btn-p" href="https://my-refund-agent.streamlit.app" target="_blank" rel="noopener">프로토타입 열기 →</a>
 </div></header>
